@@ -1,6 +1,6 @@
 import json
 from pathlib import Path
-
+import os
 import streamlit as st
 
 from src.template_analyzer import TemplateAnalyzer
@@ -20,7 +20,8 @@ st.set_page_config(
     layout="wide"
 )
 
-
+if "GROQ_API_KEY" in st.secrets:
+    os.environ["GROQ_API_KEY"] = st.secrets["GROQ_API_KEY"]
 st.title("⚖️ Legal Document Generation & Evaluation Agent")
 
 st.caption(
