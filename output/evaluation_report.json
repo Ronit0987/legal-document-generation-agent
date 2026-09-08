@@ -65,6 +65,6 @@
     "structure": "Checks numbering and structural organization of the affidavit.",
     "consistency": "Checks respondent, exhibit, and verification consistency.",
     "template_fidelity": "Checks whether the generated structure follows the expected Affidavit in Reply format.",
-    "hallucination": "Checks for obvious unsupported additions in required structured fields."
+    "hallucination": "Measures source grounding by checking extracted entities against the case information and comparing reply paragraphs with the closest matching source passages."
   }
 }

@@ -2,7 +2,7 @@ import json
 import os
 from pathlib import Path
 
-import pymupdf as fitz
+import fitz
 from dotenv import load_dotenv
 from groq import Groq
 

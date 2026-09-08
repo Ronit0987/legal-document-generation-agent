@@ -1,7 +1,7 @@
 from pathlib import Path
 from typing import Dict, List
 
-import pymupdf as fitz
+import fitz
 
 
 class TemplateAnalyzer:

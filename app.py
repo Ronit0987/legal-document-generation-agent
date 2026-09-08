@@ -20,8 +20,11 @@ st.set_page_config(
     layout="wide"
 )
 
-if "GROQ_API_KEY" in st.secrets:
-    os.environ["GROQ_API_KEY"] = st.secrets["GROQ_API_KEY"]
+try:
+    if "GROQ_API_KEY" in st.secrets:
+        os.environ["GROQ_API_KEY"] = st.secrets["GROQ_API_KEY"]
+except Exception:
+    pass
 st.title("⚖️ Legal Document Generation & Evaluation Agent")
 
 st.caption(
