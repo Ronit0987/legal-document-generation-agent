@@ -1,0 +1,70 @@
+{
+  "overall_score": 99.44,
+  "scores": {
+    "entity_accuracy": 100.0,
+    "completeness": 100.0,
+    "structure": 100.0,
+    "consistency": 100.0,
+    "template_fidelity": 100.0,
+    "hallucination": 96.65
+  },
+  "issues": [
+    {
+      "type": "reply_paragraph",
+      "paragraph": 3,
+      "grounding_score": 83.87,
+      "message": "Reply paragraph 3 has 83.87% similarity to the closest source passage."
+    },
+    {
+      "type": "reply_paragraph",
+      "paragraph": 6,
+      "grounding_score": 78.98,
+      "message": "Reply paragraph 6 has 78.98% similarity to the closest source passage."
+    }
+  ],
+  "validation_summary": {
+    "score": 100.0,
+    "passed_checks": 6,
+    "total_checks": 6,
+    "checks": [
+      {
+        "name": "Required fields present",
+        "passed": true,
+        "message": "All required fields are present."
+      },
+      {
+        "name": "Reply paragraph numbering",
+        "passed": true,
+        "message": "Paragraph sequence is valid: [1, 2, 3, 4, 5, 6]"
+      },
+      {
+        "name": "Verification paragraph range",
+        "passed": true,
+        "message": "Verification correctly covers paragraphs 1 to 6."
+      },
+      {
+        "name": "Exhibit consistency",
+        "passed": true,
+        "message": "All declared exhibits are referenced in the reply paragraphs."
+      },
+      {
+        "name": "Respondent consistency",
+        "passed": true,
+        "message": "Respondent No. 2 is consistently referenced."
+      },
+      {
+        "name": "Prayer present",
+        "passed": true,
+        "message": "Prayer section is present."
+      }
+    ]
+  },
+  "scoring_explanation": {
+    "entity_accuracy": "Checks whether key extracted entities are present and internally plausible.",
+    "completeness": "Checks whether required affidavit components are present.",
+    "structure": "Checks numbering and structural organization of the affidavit.",
+    "consistency": "Checks respondent, exhibit, and verification consistency.",
+    "template_fidelity": "Checks whether the generated structure follows the expected Affidavit in Reply format.",
+    "hallucination": "Checks for obvious unsupported additions in required structured fields."
+  }
+}
