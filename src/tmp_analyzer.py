@@ -1,7 +1,7 @@
 from pathlib import Path
 from typing import Dict, List
 
-import fitz  # PyMuPDF
+import pymupdf 
 
 
 class TemplateAnalyzer:
@@ -21,7 +21,7 @@ class TemplateAnalyzer:
     def extract_text(self) -> str:
         """Extract text from the reference PDF."""
 
-        document = fitz.open(self.pdf_path)
+        document = pymupdf.open(self.pdf_path)
 
         pages = []
 

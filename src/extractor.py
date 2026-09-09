@@ -2,7 +2,7 @@ import json
 import os
 from pathlib import Path
 
-import fitz
+import pymupdf
 from dotenv import load_dotenv
 from groq import Groq
 
@@ -32,7 +32,7 @@ class CaseInformationExtractor:
     def extract_text(self) -> str:
         """Extract text from the case information PDF."""
 
-        document = fitz.open(self.pdf_path)
+        document = pymupdf.open(self.pdf_path)
 
         pages = []
 
