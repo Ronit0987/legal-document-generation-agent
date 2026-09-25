@@ -1,7 +1,7 @@
 # Legal Document Generation & Evaluation Agent
 
 An AI-powered pipeline for generating and evaluating an **Affidavit in Reply** from structured case information while preserving the structure and style of a reference affidavit.
-
+Live Link - https://legal-document-generation-agent.streamlit.app/
 The system extracts case facts from a PDF, maps them into a structured schema, generates a `.docx` affidavit, runs deterministic validation checks, and produces an evaluation report with source-grounding analysis.
 
 ## Features
